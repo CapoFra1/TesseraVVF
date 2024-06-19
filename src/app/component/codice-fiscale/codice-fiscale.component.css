@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    
+}
+mat-card{
+    margin: 20px ;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+mat-card-title{
+    font-size: 25px;
+    color: #3f51b5;
+    font-weight: bolder;
+}
+
+.title{
+    margin-left: 20px;
+}
+form {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px ;
+    align-items: center;
+  }

@@ -1,0 +1,26 @@
+<div class="buttonVi">
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="visualizza()"
+    
+  >
+    Visualizza
+  </button>
+</div>
+<div class="container" *ngIf="button">
+  <div class="card" (click)="toggleFlip()" [@flipState]="flip">
+    <div class="face back">
+      <img src="/assets/img/tessera.png" alt="" />
+      <h2 class="cognome">{{ cognome }}</h2>
+      <h2 class="nome">{{ nome }}</h2>
+      <h2 class="idTessera">{{ idTessera }}</h2>
+    </div>
+    <div class="face front">
+      <img src="/assets/img/tessera_back.png" alt="" />
+      <h2 class="cognome">{{ codiceInterno }}</h2>
+      <h2 class="nome">{{ codiceInternoHex }}</h2>
+      <h2 class="idTessera">{{ codicePrefissoHex }}</h2>
+    </div>
+  </div>
+</div>
