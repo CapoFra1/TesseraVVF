@@ -46,14 +46,14 @@ export class TesseraComponent implements OnInit{
   codiceInternoHex:string=''
   codicePrefissoHex:string=''
   visualizza(){
-    this.nome=this.result.nome/* dati.getDataV().nome */
-    this.cognome=this.dati.getDataV().cognome
+    //this.nome=this.result.nome/* dati.getDataV().nome */
+    /* this.cognome=this.dati.getDataV().cognome
     this.idTessera=this.dati.rimuoviZeri(this.dati.getDataV().idTessera)
     this.codiceInterno=this.dati.getDataV().codiceInterno
     this.codiceInternoHex=this.dati.getDataV().codiceInternoHex
     this.codicePrefissoHex=this.dati.getDataV().codicePrefissoHex
     
-    this.dati.cambiaStato()
+    this.dati.cambiaStato() */
   }
   
 

@@ -14,6 +14,7 @@ export class CodiceFiscaleComponent implements OnInit{
     this.dati.item$.subscribe(button=>this.button=button);
   }
   button:boolean
+  result:{}
   invioCI(form: NgForm) {
     /* this.dati.storeDataV({
       cognome:'Caporaso',
@@ -23,10 +24,11 @@ export class CodiceFiscaleComponent implements OnInit{
       codiceInternoHex:'AF23H9',
       codicePrefissoHex:'AF'
     })
-    
-    this.dati.cambiaStato() */
+    */
+    this.dati.cambiaStato() 
     
     this.dati.setCI(form.value.ci);
-    this.dati.getData()
+    this.dati.result$.subscribe(res=>this.result=res)
+    console.log(this.result)
   }
 }

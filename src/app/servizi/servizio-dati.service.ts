@@ -19,7 +19,7 @@ export class ServizioDatiService implements OnInit {
   item$=this._showButton.asObservable()
   result$=this._result.asObservable();
   getData(){
-      this._result.next(this.http.get(this.apiUrl+ this.ci));
+      this._result.next(this.http.get(this.apiUrl + this.ci));
   }
   getCI(){
     return this.ci
